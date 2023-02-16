@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>bill</title>
+</head>
+<script type="text/javascript">
+function bill() 
+{
+var d; 
+d=window.open("");
+d.document.write("<table border=2 bordercolor=black>");
+
+d.document.write("<tr>");
+d.document.write("<td>First name :</td>");
+d.document.write("<td>");
+d.document.write(f1.t1.value);
+d.document.write("</td>");
+
+d.document.write("<tr>");
+d.document.write("<td>Middle Name :</td>");
+d.document.write("<td>");
+d.document.write(f1.t2.value);
+d.document.write("</td>");
+d.document.write("</tr>");
+
+d.document.write("<tr>");
+d.document.write("<td>Last Name</td>");
+d.document.write("<td>");
+d.document.write(f1.t3.value);
+d.document.write("</td>");
+d.document.write("</tr>");
+
+d.document.write("<tr>");
+d.document.write("<td>Address :</td>");
+d.document.write("<td>");
+d.document.write(f1.t4.value);
+d.document.write("</td>");
+d.document.write("</tr>");
+
+d.document.write("<tr>");
+d.document.write("<td>City :</td>");
+d.document.write("<td>");
+d.document.write(f1.t5.value);
+d.document.write("</td>");
+d.document.write("</tr>");
+
+
+d.document.write("<tr>");
+d.document.write("<td>Gender :</td>");
+d.document.write("<td>");
+d.document.write(f1.t6.value);
+d.document.write("</td>");
+d.document.write("</tr>");
+
+d.document.write("<tr>");
+d.document.write("<td>Date Of Birth :</td>");
+d.document.write("<td>");
+d.document.write(f1.t7.value);
+d.document.write("</td>");
+d.document.write("</tr>");
+
+
+
+d.document.write("<tr>");
+d.document.write("<td>Hobby :</td>");
+d.document.write("<td>");
+d.document.write(f1.t8.value);
+d.document.write("</td>");
+d.document.write("</tr>");
+
+
+d.document.write("<tr>");
+d.document.write("<td>Qualification :</td>");
+d.document.write("<td>");
+d.document.write(f1.t9.value);
+d.document.write("</td>");
+d.document.write("</tr>");
+
+d.document.write("</table>");
+}
+
+</script>
+<body bgcolor=lightgreen>
+<h1>Form</h1>
+<form name=f1>
+<table>
+<tr>
+<td>FirstName :</td>
+<td><input type="text" name="t1"></td>
+</tr>
+<tr>
+<td>Middle Name :</td>
+<td><input type="text" name="t2"></td>
+</tr>
+<tr>
+<td>Last Name :</td>
+<td><input type="text" name="t3"></td>
+</tr>
+<tr>
+<td>Address :</td>
+<td><textarea rows=2 cols=25 name="t4"></textarea></td>
+<tr>
+<tr>
+<td>City :</td>
+<td><select name="t5">
+<option value="Select">Select</option>	
+<option value="Ahemdabad">Ahemdabad</option>	
+<option value="Surat">Surat</option>
+<option value="Baroda">Baroda</option>
+</select></td>
+</tr>
+
+<tr>
+<td>Gender :</td>
+<td><input type="text" name="t6" >
+</td>
+</tr>
+
+<tr>
+<td>Date of Birth :</td>
+<td><input type="text" name="t7"></td>
+</tr>
+
+<tr>
+<td>Hobby:</td>
+<td>
+<input type="text" name="t8">
+</td>
+</tr>
+
+<tr>
+<td>Qualification:</td>
+<td><Select name="t9">
+<option name="select" value="Select">Select</option>
+<option value="S.S.C">S.S.C</option>
+<option value="H.S.C">H.S.C</option>
+<option value="B.Com">B.Com</option>
+<option value="B.B.A">B.B.A</option>
+<option value="B.C.A">B.C.A</option>
+</Select></td>
+</tr>
+
+<br>
+<tr>
+<td><input type="submit" value="Submit" onClick="bill()" >
+<input type=reset value="Reset">
+</td></tr>
+</table>
+</form>
+</body>
+</html>
