@@ -1,0 +1,153 @@
+  <html>
+<head>
+<title>Form</title>
+<script language="javascript">
+function validateForm() 
+{
+var x = document.form1.firstname.value;
+var y = document.form1.middlename.value;	
+var z = document.form1.lname.value;
+var r = document.form1.address.value;
+var d = document.form1.birth.value;
+if(x ==null || x == "") 
+{
+alert("Name must be filled out");
+document.form1.firstname.focus();
+return false;
+}
+
+if(y =="" || y == null) 
+{
+alert("Please enter the middle name properly");
+document.form1.middlename.focus();
+return false;
+}
+
+if(z =="" || z == null) 
+{
+alert("Please enter the Last name properly");
+document.form1.lname.focus();
+return false;
+}
+
+if(r =="") 
+{
+alert("Please enter the Address");
+document.form1.address.focus();
+return false;
+}
+
+if(document.form1.city.value =="select") 
+{
+alert("Please select City ");
+document.form1.city.focus();
+return false;
+}
+
+
+if((document.form1.gender[0].checked==false) && (document.form1.gender[1].checked==false))
+{
+alert("Please choose uour Gender : Male Or Female");
+document.form1.gender[0].focus();
+return false;
+}
+
+if(d =="" || d == null) 
+{
+alert("Please enter Date Of Birth");
+document.form1.birth.focus();
+return false;
+}
+
+if((document.form1.hobby[0].checked==false)&&(document.form1.hobby[1].checked==false)&&(document.form1.hobby[2].checked==false))
+{
+alert("Please Choose A Hobby");
+document.form1.hobby[0].focus();
+return false;
+}
+
+if(document.form1.qualification.value =="select") 
+{
+alert("Please select Qualification");
+document.form1.qualification.focus();
+return false;
+}
+
+}
+
+</script>
+</head>
+
+<body bgcolor="pink">
+<h1>Form</h1>
+	
+
+<form name="form1" onSubmit="return validateForm()" >
+<table>
+<tr>
+<td>FirstName :</td>
+<td><input type="text" name="firstname"></td>
+</tr>
+<tr>
+<td>Middle Name :</td>
+<td><input type="text" name="middlename"></td>
+</tr>
+<tr>
+<td>Last Name :</td>
+<td><input type="text" name="lname"></td>
+</tr>
+<tr>
+<td>Addressb :</td>
+<td><textarea rows=2 cols=25 name="address"></textarea></td>
+<tr>
+<tr>
+<td>City :</td>
+<td><select name=city>
+<option name="select" value="select">select</option>	
+<option name="city">Ahemdabad</option>	
+<option name="city">Surat</option>
+<option name="city">Baroda</option>
+</select></td>
+</tr>
+
+<tr>
+<td>Gender :</td>
+<td><input type=radio name="gender">Male
+<input type=radio name="gender">Female</td>
+</tr>
+<tr>
+<td>Date of Birth :</td>
+<td><input type="text" name="birth"></td>
+</tr>
+
+<tr>
+<td>Hobby:</td>
+
+<td>Cricket<input type=checkbox name="hobby">
+Reading<input type=checkbox name="hobby">
+Playing<input type=checkbox name="hobby"></td>
+</tr>
+
+<tr>
+<td>Qualification:</td>
+<td><Select name="qualification">
+<option name="select" value="select">select</option>
+<option>S.S.C</option>
+<option>H.S.C</option>
+<option>B.Com</option>
+<option>B.B.A</option>
+<option>B.C.A</option>
+</Select></td>
+</tr>
+
+<br>
+<tr>
+<td><input type="submit" value="Submit" >
+<input type=reset value="Reset">
+</td></tr>
+</table>
+</form>
+
+</center>
+</body>
+</html>
